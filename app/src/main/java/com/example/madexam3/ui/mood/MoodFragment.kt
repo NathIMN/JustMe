@@ -115,12 +115,18 @@ class MoodFragment : Fragment() {
         val entries = mutableListOf<Entry>()
         val calendar = Calendar.getInstance()
         calendar.time = weekStart
+        val today = DataManager.getTodayDate()
 
         for (i in 0..6) {
             val dateStr = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(calendar.time)
-            val moodEntry = moodEntries.find { it.date == dateStr }
-            val moodValue = moodEntry?.mood?.value?.toFloat() ?: 0f
-            entries.add(Entry(i.toFloat(), moodValue))
+
+            // Only add entries for dates up to today (don't show future dates)
+            if (dateStr <= today) {
+                val moodEntry = moodEntries.find { it.date == dateStr }
+                val moodValue = moodEntry?.mood?.value?.toFloat() ?: 0f // Past dates without mood = 0
+                entries.add(Entry(i.toFloat(), moodValue))
+            }
+
             calendar.add(Calendar.DAY_OF_YEAR, 1)
         }
 

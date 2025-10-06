@@ -1,11 +1,13 @@
 package com.example.madexam3.data
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import com.example.madexam3.data.model.*
 import java.text.SimpleDateFormat
 import java.util.*
 
+@SuppressLint("StaticFieldLeak")
 object DataManager {
     private const val HABITS_PREFS = "habits_prefs"
     private const val COMPLETIONS_PREFS = "completions_prefs"
@@ -137,6 +139,15 @@ object DataManager {
         completions.removeAll { it.habitId == completion.habitId && it.date == completion.date }
         completions.add(completion)
         saveHabitCompletions(completions)
+
+        // Update widget when habit completion changes
+        try {
+            val widgetClass = Class.forName("com.example.madexam3.widget.HabitWidgetProvider")
+            val updateMethod = widgetClass.getDeclaredMethod("updateAllWidgets", Context::class.java)
+            updateMethod.invoke(null, context)
+        } catch (e: Exception) {
+            // Widget class not found or method failed, ignore silently
+        }
     }
 
     fun getHabitCompletionsForDate(date: String): List<HabitCompletion> {
