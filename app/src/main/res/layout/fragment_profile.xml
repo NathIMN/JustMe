@@ -46,15 +46,22 @@
                     android:orientation="vertical"
                     android:padding="@dimen/margin_large">
 
-                    <ImageView
+<!--                    <ImageView-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:layout_marginBottom="@dimen/margin_medium"-->
+<!--                        android:background="@drawable/week_day_circle"-->
+<!--                        android:backgroundTint="?attr/colorPrimary"-->
+<!--                        android:src="@drawable/doflamingo" />-->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivProfileImage"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginBottom="@dimen/margin_medium"
-                        android:background="@drawable/week_day_circle"
-                        android:backgroundTint="?attr/colorPrimary"
-                        android:padding="@dimen/margin_medium"
-                        android:src="@drawable/ic_profile"
-                        app:tint="?attr/colorOnPrimary" />
+                        android:contentDescription="profile image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ken"
+                        app:shapeAppearanceOverlay="@style/RoundImage" />
 
                     <TextView
                         android:id="@+id/tvProfileName"
@@ -62,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/margin_xs"
                         android:textAppearance="@style/TextAppearance.JustMe.Headline1"
-                        tools:text="Coffee Lover" />
+                        tools:text="Nimsara Nath" />
 
                     <TextView
                         android:id="@+id/tvProfileEmail"
@@ -70,7 +77,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.JustMe.Body1"
                         android:textColor="?attr/colorOnSurfaceVariant"
-                        tools:text="justme@coffee.com" />
+                        tools:text="nimsaranath@gmail.com" />
 
                 </LinearLayout>
 
