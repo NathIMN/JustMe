@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Just Me</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_quick_log">Quick Log</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Habits -->
+    <string name="habits_title">My Daily Habits</string>
+    <string name="add_habit">Add New Habit</string>
+    <string name="edit_habit">Edit Habit</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_description">Description</string>
+    <string name="habit_target">Target</string>
+    <string name="habit_unit">Unit</string>
+    <string name="tracking_type">Tracking Type</string>
+    <string name="tracking_checkbox">Checkbox (Done/Not Done)</string>
+    <string name="tracking_counter">Counter (Number)</string>
+    <string name="tracking_timer">Timer (Minutes)</string>
+    <string name="save_habit">Save Habit</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="habit_completed">Completed!</string>
+    <string name="this_week">This Week</string>
+    <string name="today">Today</string>
+    <string name="no_habits_title">No Habits Yet</string>
+    <string name="no_habits_message">Start building healthy habits by adding your first habit!</string>
+
+    <!-- Mood Journal -->
+    <string name="mood_journal_title">Mood Journal</string>
+    <string name="log_mood">Log Today\'s Mood</string>
+    <string name="select_mood">How are you feeling?</string>
+    <string name="mood_notes">Notes (optional)</string>
+    <string name="save_mood">Save Mood</string>
+    <string name="mood_trend">Weekly Mood Trend</string>
+    <string name="mood_happy">Happy</string>
+    <string name="mood_neutral">Neutral</string>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_angry">Angry</string>
+    <string name="mood_excited">Excited</string>
+
+    <!-- Quick Log -->
+    <string name="quick_log_title">Quick Log</string>
+    <string name="log_habit_completion">Log Habit Completion</string>
+    <string name="log_todays_mood">Log Today\'s Mood</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_name">Coffee Lover</string>
+    <string name="profile_email">justme@coffee.com</string>
+    <string name="total_habits">Total Habits</string>
+    <string name="days_streak">Day Streak</string>
+    <string name="mood_entries">Mood Entries</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="theme_settings">Theme</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+    <string name="hydration_settings">Hydration Reminders</string>
+    <string name="enable_hydration">Enable Reminders</string>
+    <string name="hydration_interval">Reminder Interval (hours)</string>
+    <string name="reset_data">Reset All Data</string>
+    <string name="reset_confirmation">Are you sure you want to reset all data? This action cannot be undone.</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="loading">Loading...</string>
+
+    <!-- Notifications -->
+    <string name="hydration_reminder_title">Time to Hydrate! ☕</string>
+    <string name="hydration_reminder_text">Don\'t forget to drink some water and stay healthy!</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Your personal wellness companion</string>
+</resources>

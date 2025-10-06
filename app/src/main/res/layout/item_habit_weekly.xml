@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_small">
+
+    <TextView
+        android:id="@+id/tvHabitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.JustMe.Body1"
+        tools:text="Morning Exercise" />
+
+    <!-- Week days progress -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/dayMon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/dayTue"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/dayWed"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/dayThu"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/dayFri"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/daySat"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+        <View
+            android:id="@+id/daySun"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/week_day_circle"
+            android:backgroundTint="?attr/colorSurfaceVariant" />
+
+    </LinearLayout>
+
+</LinearLayout>
