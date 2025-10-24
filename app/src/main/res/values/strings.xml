@@ -83,7 +83,7 @@
     <string name="loading">Loading...</string>
 
     <!-- Notifications -->
-    <string name="hydration_reminder_title">Time to Hydrate! ☕</string>
+    <string name="hydration_reminder_title">Time to Hydrate!</string>
     <string name="hydration_reminder_text">Don\'t forget to drink some water and stay healthy!</string>
 
     <!-- Splash Screen -->

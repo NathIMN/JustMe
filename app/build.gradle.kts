@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.madexam3"
+    namespace = "com.example.justme"
     compileSdk = 36
 
     defaultConfig {
