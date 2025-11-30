@@ -28,8 +28,6 @@ This repository contains the Android app module `app/` implemented with Android 
 - RecyclerView-based lists and multiple adapters
 - App Widgets (home screen widget layouts present)
 
-Assumptions: The project likely uses local persistence (Room or SharedPreferences) and coroutines/Flow for async operations. If you rely on external libraries (Room, Hilt, MPAndroidChart), ensure they are declared in the Gradle files.
-
 ## Architecture (recommended / inferred)
 
 - Pattern: MVVM-style separation (UI folders and adapters suggest ViewModel usage).
